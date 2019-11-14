@@ -1,0 +1,102 @@
+.menu {
+    position: relative;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu-heading-div {
+    align-self: center;
+}
+
+.menu-heading {
+    span {
+        font-family: 'Liu Jian Mao Cao', cursive;
+        font-size: 7.5rem;
+        line-height: 0;
+
+        @include respond(tab-port) {
+            font-size: 4rem;
+            text-align: center;
+        }
+    }
+
+    font-family: $font-secondary;
+    font-size: 9rem;
+    color: white;
+
+    @include respond(tab-port) {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
+    &__item {
+        width: 18vw;
+        align-self: flex-start;
+
+        @include respond(tab-port) {
+            width: 95%;
+            align-self: center;
+        }
+    }
+}
+
+.menu-1 {
+    padding: 3.5rem 0;
+    display: flex;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
+    &__item {
+        width: 26vw;
+        align-self: flex-start;
+
+        @include respond(tab-port) {
+            width: 95%;
+            align-self: center;
+            padding: 3rem 0;
+        }
+    }
+}
+
+.menu-line {
+    padding: 3rem 0;
+}
+
+.menu-2 {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
+    &__item {
+        width: 28vw;
+        align-self: flex-start;
+
+        @include respond(tab-port) {
+            width: 95%;
+            align-self: center;
+            padding: 3rem 0;
+        }
+
+
+    }
+}
